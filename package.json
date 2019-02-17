@@ -1,0 +1,22 @@
+{
+  "name": "node_demo",
+  "version": "1.0.0",
+  "description": "node demo project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Bharath G",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "md5": "^2.2.1",
+    "mongoose": "^5.4.12",
+    "randomstring": "^1.1.5",
+    "validator": "^10.11.0"
+  }
+}
