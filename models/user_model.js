@@ -7,6 +7,8 @@ const userSchema = new mongoose.Schema({
     first_name: { type: "String" },
     last_name: { type: "String" },
     dob: { type: "String" },
+    skills: [{ type: "String" }],
+    country: { type: "String" },
     status: { type: String, default: "active" }
 }, { timestamps: { createdAt: 'created_at', updatedAt: 'updated_at' } });
 

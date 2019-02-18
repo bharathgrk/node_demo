@@ -1,0 +1,51 @@
+[{
+    "country" : "India",
+    "country_slug" : "india",
+    "status" : "active"
+},
+{
+    "country" : "United Kingdom",
+    "country_slug" : "united_kingdom",
+    "status" : "active"
+},
+{
+    "country" : "United States of America",
+    "country_slug" : "united_states_of_america",
+    "status" : "active"
+},
+{
+    "country" : "France",
+    "country_slug" : "france",
+    "status" : "active"
+},
+{
+    "country" : "Germany",
+    "country_slug" : "germany",
+    "status" : "active"
+},
+{
+    "country" : "Spain",
+    "country_slug" : "spain",
+    "status" : "active"
+},
+{
+    "country" : "Italy",
+    "country_slug" : "italy",
+    "status" : "active"
+},
+{
+    "country" : "Netherlands",
+    "country_slug" : "netherlands",
+    "status" : "active"
+},
+{
+    "country" : "Canada",
+    "country_slug" : "canada",
+    "status" : "active"
+},
+{
+    "country" : "Nepal",
+    "country_slug" : "nepal",
+    "status" : "active"
+}
+]

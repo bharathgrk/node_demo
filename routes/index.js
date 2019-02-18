@@ -8,5 +8,7 @@ router.post('/', UserController.signUp);
 router.post('/login', UserController.login, LoginController.createSession);
 router.put('/logout', LoginController.deleteSession);
 router.get('/:userId', UserController.details);
+router.get('/skills/:value', UserController.skillsList);
+router.get('/countries/:value', UserController.countriesList);
 
 module.exports = router;

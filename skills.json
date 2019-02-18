@@ -1,0 +1,86 @@
+[{
+    "skill" : "PHP",
+    "skill_slug" : "php",
+    "status" : "active"
+},
+{
+    "skill" : "NodeJS",
+    "skill_slug" : "nodejs",
+    "status" : "active"
+},
+{
+    "skill" : "MySQL",
+    "skill_slug" : "mysql",
+    "status" : "active"
+},
+{
+    "skill" : "MongoDB",
+    "skill_slug" : "mongodb",
+    "status" : "active"
+},
+{
+    "skill" : "Java",
+    "skill_slug" : "java",
+    "status" : "active"
+},
+{
+    "skill" : "Python",
+    "skill_slug" : "python",
+    "status" : "active"
+},
+{
+    "skill" : "Go Lang Programming",
+    "skill_slug" : "go_lang",
+    "status" : "active"
+},
+{
+    "skill" : "Javascript",
+    "skill_slug" : "javascript",
+    "status" : "active"
+},
+{
+    "skill" : "Docker",
+    "skill_slug" : "docker",
+    "status" : "active"
+},
+{
+    "skill" : "Perl",
+    "skill_slug" : "perl",
+    "status" : "active"
+},
+{
+    "skill" : "C",
+    "skill_slug" : "c",
+    "status" : "active"
+},
+{
+    "skill" : "C++",
+    "skill_slug" : "c++",
+    "status" : "active"
+},
+{
+    "skill" : "C#",
+    "skill_slug" : "c#",
+    "status" : "active"
+},
+{
+    "skill" : "Kotlin",
+    "skill_slug" : "kotlin",
+    "status" : "active"
+},
+{
+    "skill" : "ReactJS",
+    "skill_slug" : "reactjs",
+    "status" : "active"
+},
+{
+    "skill" : "Angular",
+    "skill_slug" : "angular",
+    "status" : "active"
+},
+{
+    "skill" : "PostgreSQL",
+    "skill_slug" : "postgresql",
+    "status" : "active"
+}
+]

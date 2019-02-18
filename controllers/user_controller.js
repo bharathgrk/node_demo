@@ -2,6 +2,10 @@ const md5 = require('md5');
 const validator = require('validator');
 const User = require('../models/user_model');
 const UserModel = User.getModel;
+const Country = require('../models/country_model');
+const CountryModel = Country.getModel;
+const Skill = require('../models/skill_model');
+const SkillModel = Skill.getModel;
 
 async function create(user) {
     return await user.save();
@@ -9,6 +13,14 @@ async function create(user) {
 
 async function getUser(find_user_query, project) {
     return await UserModel.findOne(find_user_query).select(project);
+}
+
+async function getSkills(find_user_query) {
+    return await SkillModel.find(find_user_query);
+}
+
+async function getCountries(find_user_query) {
+    return await CountryModel.find(find_user_query);
 }
 
 const signUp = function (req, res, next) {
@@ -72,8 +84,48 @@ const details = function (req, res, next) {
         .catch(err => next(err));
 };
 
+const skillsList = function (req, res, next) {
+    const skill_value = req.params.value;
+
+    const find_skills = {
+        skill_slug: { "$regex": skill_value.toLowerCase() },
+        status: "active"
+    };
+
+    getSkills(find_skills)
+        .then((skills_list) => {
+            if (skills_list.length > 0) {
+                res.json({ result: true, skills_list })
+            } else {
+                throw "No skills found..";
+            }
+        })
+        .catch(err => next(err));
+};
+
+const countriesList = function (req, res, next) {
+    const country_value = req.params.value;
+
+    const find_countries = {
+        country_slug: { "$regex": country_value.toLowerCase() },
+        status: "active"
+    };
+
+    getCountries(find_countries)
+        .then((countries_list) => {
+            if (countries_list.length > 0) {
+                res.json({ result: true, countries_list })
+            } else {
+                throw "No countries found..";
+            }
+        })
+        .catch(err => next(err));
+};
+
 module.exports = {
     signUp,
     login,
-    details
+    details,
+    skillsList,
+    countriesList
 };
