@@ -16,6 +16,6 @@
     "md5": "^2.2.1",
     "mongoose": "^5.4.12",
     "randomstring": "^1.1.5",
-    "validator": "^10.11.0"
+    "validator": "^13.7.0"
   }
 }
